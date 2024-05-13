@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+#header {
+  height: 100vh;
+  background-color: #0162be;
+  color: #fff;
+}
+a {
+    text-decoration: none;
+  }
+  
+  .container {
+    margin: 0 7rem;
+    height: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+  
+  nav .logo {
+    width: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+  }
+
+
+  #header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+  }
+  
+  #header .content img {
+    width: 220px;
+    animation: animation1 1s ease-out;
+  }
+  
+  /* #header .content .content-text {
+    background-color: red;
+  } */
+  
+  #header .content .content-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  
+  #header .content .content-text h1 span {
+    font-size: 70px;
+  }
+  
+  #header .content .content-text p {
+    width: 60%;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+
+  .btn {
+    display: inline;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  
+  .social {
+    margin-left: 3rem;
+    animation: animation1 1s ease-out;
+  }
+  
+  .social i {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  
+  .gallery img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    animation: animation2 1s ease-out;
+  }
+
+  /* Animation */
+
+@keyframes animation1 {
+    0% {
+      transform: translateX(500px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes animation2 {
+    0% {
+      transform: translateY(200px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* Tablet */
+  @media (max-width: 900px) {
+    .container {
+        margin: 0 1rem;
+    }
+
+    nav ul a {
+        padding: 10px;
+    }
+  }
+
+
+  
+/* Tablet */
+@media (max-width: 900px) {
+    .container {
+      margin: 0 1rem;
+    }
+  
+    nav ul a {
+      padding: 10px;
+    }
+  
+    #header .content {
+      flex-direction: column;
+      padding: 2rem 0 0;
+      text-align: center;
+    }
+  
+    #header .content img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+  
+    #header .content .content-text h1 {
+    }
+  
+    #header .content .content-text p {
+      width: 100%;
+    }
+  
+    #header .content .content-text {
+      margin-bottom: 2rem;
+    }
+  
+    .social {
+      margin-left: 0;
+    }
+  
+    .gallery {
+      margin-top: 15px;
+    }
+  }
+
+  /* Mobile */
+@media (max-width: 600px) {
+    nav {
+      display: block;
+    }
+  
+    nav .logo {
+      display: block;
+      margin: 0 auto 15px;
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    nav ul a {
+      font-size: 12px;
+    }
+  }
+
+    
+  
+/* root */
+ :root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40
+
+    --bg-color: #f3f4fd;
+    --dark-berry-40: #160d3d;
+    --blue-60: #66a5ff;
+    --white: white;
+    --dodger-blue: #4a90e2;
+    --blue-10-102: #e6f0ff;
+    --salmon: #ff8072;
+    --dark-berry-60: #0e0829;
+    --blue-dark: #002a66;
+    --purple-100: #b200ff;
+    --white-2: white;
+    --light-steel-blue: #a7c9f1;
+    --grey: #977c6c;
+    --light-steel-blue-2: #c8ddf6;
+    --chocolate: #bf691b;
+    --maroon: #502309;
+    --peach-puff: #e5c3a4;
+    --light-steel-blue-3: #c8ddf6;
+    --shadow-blue: rgba(43,92,149,.1);
+    --alice-blue: #e1edfb;
+    --gold: #ffc800;
+    --goldenrod: #e09b2a;
+    --dark-slate-blue: #18385e;
+    --blue-20: #cce1ff;
+    --purple-5: #fdf7ff;
+    --blue-5: #f5f9ff;
+    --blue-100: #006aff;
+    --turquoise-5: #f2fdff;
+    --turquoise-specialdark: #00b8de;
+    --turquoise-15: #d9f8ff;
+    --turquoise-50: #80e9ff;
+    --blue-35: #a6cbff;
+    --purple-35: #e4a6ff;
+    --blue-15: #d9e9ff;
+    --purple-10-101: #f7e6ff;
+    --blue-10-101: #e6f0ff;
+    --purple-60: #d166ff;
+    --turquoise-60: #40deff;
+    --blue-50: #80b4ff;
+    --turquoise-100: #00d3ff;
+    --purple-75: #c540ff;
+    --blue-75: #408fff;
+    --turquoise-75: #40deff;
+    --berry-60: #9d85ff;
+    --berry-100: #3b20dd;
+    --berry-75: #6c58e5;
+
+
+    
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    
+}
+
+  
+    
